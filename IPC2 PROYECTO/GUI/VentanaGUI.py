@@ -178,7 +178,7 @@ class Window(Tk):
             play_event = threading.Event()
             stop_event = threading.Event()
             self.reproducir(self.actualPlaylist.value, play_event, stop_event)
-    # Resto de tu código
+    
     
                 
     def aNext(self):
