@@ -1,3 +1,3 @@
-from ui.window import Window
+from GUI.VentanaGUI import Window
 window = Window().mainloop()
 

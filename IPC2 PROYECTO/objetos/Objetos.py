@@ -62,6 +62,8 @@ class ListaDoble:
                     string += "{},".format(actual)
                 actual = actual.siguiente
             return string
+        
+        
 class Cancion:
     def __init__(self, nombre, album, artista, ruta, imagen):
         self.nombre = nombre
@@ -71,6 +73,8 @@ class Cancion:
         self.imagen = imagen
     def __str__(self):
         return "Canción: {}".format(self.nombre)
+    
+    
 class Album:
     def __init__(self, nombre, imagen):
         self.nombre = nombre
@@ -83,6 +87,8 @@ class Album:
         for i in range(self.listaCanciones.length):
                 string += "\n\t\t\t\t{}".format(self.listaCanciones.getById(i))       
         return string
+    
+    
 class Artista:
     def __init__(self, nombre):
         self.nombre = nombre
@@ -98,6 +104,7 @@ class Artista:
         for i in range(self.listaAlbumes.length):
             string += "\n{}".format(self.listaAlbumes.getById(i))
         return string
+    
 class Library:
     def __init__(self):
         self.listaArtistas = ListaDoble()
@@ -224,6 +231,8 @@ rankdir = LR;\n"""
         for i in range(self.listaArtistas.length):
             string += "\n\t{}".format(self.listaArtistas.getById(i))
         return string
+    
+    
 class EntryPlaceholder(Entry):
     def __init__(self, placeholder, master = None, color = 'grey'):    
         super().__init__(master)
@@ -246,6 +255,8 @@ class EntryPlaceholder(Entry):
     def foc_out(self, *args):
         if not self.get():
             self.put_placeholder()
+            
+            
 class ListaCircular:
     def __init__(self):
         self.length = 0

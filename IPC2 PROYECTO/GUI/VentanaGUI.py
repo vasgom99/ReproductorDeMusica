@@ -1,12 +1,12 @@
 import os
 from tkinter.constants import END, CENTER, VERTICAL
-from metodos.readxml import XMLReader
-from objects.objects import EntryPlaceholder, ListaCircular, ListaDoble
+from metodos.LeerXml import XMLReader
+from objetos.Objetos import EntryPlaceholder, ListaCircular, ListaDoble
 from tkinter import Image, Tk, Button, Frame, Label, ttk, messagebox
 import tkinter.font as TFont
 from PIL import Image
 from PIL import ImageTk
-from thread.thread import TPlay
+from Hilos.hilos import TPlay
 import threading
 
 class Window(Tk):
