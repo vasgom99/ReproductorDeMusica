@@ -2,6 +2,7 @@ import threading
 import ctypes
 from pygame import mixer
 
+# La clase TPlay es una clase roscada que maneja la reproducción de archivos de audio usando el pygame.mixer
 class TPlay(threading.Thread):
     def __init__(self, ruta, play_event, stop_event):
         threading.Thread.__init__(self)

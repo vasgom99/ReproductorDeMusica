@@ -1,6 +1,14 @@
+# El codigo  define varias clases y estructuras de datos para administrar una biblioteca de musica, incluida
+# listas vinculadas, nodos, canciones, albumes, artistas y una clase de biblioteca con metodos para agregar canciones,
+# Generar informes y obtener una lista de artistas.
+
 import os
 from tkinter import Entry
+
+# La clase "nodo" representa un nodo en una lista vinculada, con un valor, una ID y referencias a la siguiente
+# y nodos anteriores.
 class Nodo:
+    
     def __init__(self, value, id):
         self.value = value
         self.id = id
@@ -8,11 +16,15 @@ class Nodo:
         self.anterior = None
     def __str__(self) -> str:
         return str(self.value)
+    
+# La clase `listadoble` es una implementacion de la lista doblemente vinculada en Python.
 class ListaDoble:
+    
     def __init__(self):
         self.length = 0
         self.cabeza = None
         self.cola = None
+
     def append(self, value):
         nuevo = Nodo(value, self.length)
         if self.cabeza == None:
@@ -24,6 +36,7 @@ class ListaDoble:
             self.cola = nuevo
             actual.siguiente = self.cola
         self.length += 1
+    
     def getById(self, id):
         if self.cabeza == None:
             return "No hay cabeza"
@@ -35,6 +48,7 @@ class ListaDoble:
                 while actual.id != id:
                     actual = actual.siguiente
                 return actual.value
+   
     def contains(self, nombre):
         if self.cabeza == None:
             return None
@@ -49,6 +63,7 @@ class ListaDoble:
                 return actual.id
             else:
                 return None
+   
     def __str__(self):
         if self.cabeza == None:
             return "[]"
@@ -64,6 +79,7 @@ class ListaDoble:
             return string
         
         
+# La clase "Cancion" representa una cancion y almacena su nombre, album, artista, ruta de archivo e imagen.
 class Cancion:
     def __init__(self, nombre, album, artista, ruta, imagen):
         self.nombre = nombre
@@ -72,9 +88,10 @@ class Cancion:
         self.ruta = ruta
         self.imagen = imagen
     def __str__(self):
-        return "Canción: {}".format(self.nombre)
+        return "Cancion: {}".format(self.nombre)
     
     
+# La clase "Album"  representa un album con un nombre, una imagen y una lista de canciones.
 class Album:
     def __init__(self, nombre, imagen):
         self.nombre = nombre
@@ -89,6 +106,7 @@ class Album:
         return string
     
     
+# La clase "Artista" representa a un artista y sus albumes, con metodos para obtener la lista de albumes
 class Artista:
     def __init__(self, nombre):
         self.nombre = nombre
@@ -105,6 +123,8 @@ class Artista:
             string += "\n{}".format(self.listaAlbumes.getById(i))
         return string
     
+# La clase Library representa una biblioteca de musica y proporciona metodos para agregar canciones, generar un
+# Informe y obtener una lista de artistas.
 class Library:
     def __init__(self):
         self.listaArtistas = ListaDoble()
@@ -122,7 +142,7 @@ class Library:
                 album_ = artist.listaAlbumes.getById(contains)
                 contains = album_.listaCanciones.contains(nombre)
                 if contains != None:
-                    print("Cancion en biblioteca.. Posición: {}".format(contains))
+                    print("Cancion en biblioteca.. Posicion: {}".format(contains))
                 else:
                     album_.listaCanciones.append(new)
             else:
@@ -135,7 +155,8 @@ class Library:
             nuevoAlbum.listaCanciones.append(new)
             nuevoArtista.listaAlbumes.append(nuevoAlbum)
             self.listaArtistas.append(nuevoArtista)
-    def toList(self):#Este método retorna una lista que es necesaria
+            
+    def toList(self):#Este metodo retorna una lista que es necesaria
         lista = ListaDoble()
         for i in range(self.listaArtistas.length):
             artista = self.listaArtistas.getById(i)
@@ -145,6 +166,7 @@ class Library:
                     cancion = album.listaCanciones.getById(k)
                     lista.append(cancion)
         return lista
+    
     def report(self):
         string = """digraph G {
 layout = dot;
@@ -171,6 +193,7 @@ rankdir = LR;\n"""
 
             string += '\t\t\t}\n'
         string += "\t}\n"
+        
         #Hacia delante
         for i in range(self.listaArtistas.length):
             artista = self.listaArtistas.getById(i)
@@ -193,6 +216,7 @@ rankdir = LR;\n"""
                     else:
                         siguiente = album.listaCanciones.getById(k+1)
                         string += '"{}"->"{}";\n'.format(cancion.nombre, siguiente.nombre)
+                        
         #Hacia atras
         for i in range(self.listaArtistas.length-1,-1,-1):
             artista = self.listaArtistas.getById(i)
@@ -220,12 +244,14 @@ rankdir = LR;\n"""
         file.write(string)
         file.close()
         os.system('dot -Tpng library.dot -o library.png')
+        
     def getArtistas(self):
         lista = []
         for i in range(self.listaArtistas.length):
             artista = self.listaArtistas.getById(i)
             lista.append(artista.nombre)
-        return lista    
+        return lista   
+     
     def __str__(self):
         string = "Biblioteca\n\tArtistas:\n"
         for i in range(self.listaArtistas.length):
@@ -233,6 +259,9 @@ rankdir = LR;\n"""
         return string
     
     
+    
+# La clase `EntryPlaceholder` es una subclase de la clase 'Entrada' en Python que agrega un marcador de posicion
+# Funcionalidad al widget de entrada.
 class EntryPlaceholder(Entry):
     def __init__(self, placeholder, master = None, color = 'grey'):    
         super().__init__(master)
@@ -257,6 +286,7 @@ class EntryPlaceholder(Entry):
             self.put_placeholder()
             
             
+# La clase `ListaCircular` es una implementacion circular vinculada en la lista en Python.
 class ListaCircular:
     def __init__(self):
         self.length = 0
