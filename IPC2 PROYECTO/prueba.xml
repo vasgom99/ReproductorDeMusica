@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<biblioteca>
+    <cancion nombre = "Airbag">
+        <artista>Radio Head</artista>
+        <album>Ok Computer</album>
+        <imagen>D:\Musica\SD\AA\Absolute\OK COMPUTER - RADIO HEAD - ALBUM.png</imagen>
+        <ruta>D:\Musica\SD\AA\Absolute\01 Airbag.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Last Kiss">
+        <artista>PearlJam </artista>
+        <album>Disc1 1998-2003</album>
+        <imagen>D:\Musica\SD\AA\Absolute\Nueva carpeta\PearlJam - Disc1 - AlbumImage.png</imagen>
+        <ruta>D:\Musica\SD\AA\Absolute\Nueva carpeta\01 Last Kiss.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Paradise City">
+        <artista>Guns N' Roses</artista>
+        <album>Appetite for Destruction</album>
+        <imagen>D:\Musica\SD\AA\Absolute\Nueva carpeta\Appetite for Destruction - Image Album.png</imagen>
+        <ruta>D:\Musica\SD\AA\Absolute\Nueva carpeta\06 Paradise City.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Sweet Child O' Mine">
+        <artista>Guns N' Roses</artista>
+        <album>Appetite for Destruction</album>
+        <imagen>D:\Musica\SD\AA\Absolute\Nueva carpeta\Appetite for Destruction - Image Album.png</imagen>
+        <ruta>D:\Musica\SD\AA\Absolute\Nueva carpeta\09 Sweet Child O' Mine.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Knocking On Heavens Door">
+        <artista>Guns N' Roses</artista>
+        <album>Use Your Illusion II</album>
+        <imagen>D:\Musica\SD\AA\Absolute\Nueva carpeta\Use Your Illusion II - Image Album.png</imagen>
+        <ruta>D:\Musica\SD\AA\Absolute\Nueva carpeta\Knocking On Heavens Door.mp3</ruta>
+    </cancion>
+</biblioteca>
