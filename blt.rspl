@@ -1,0 +1,44 @@
+<biblioteca>
+    <cancion nombre = "Cartoon  Made Me Feel ft Kristel Aaslaid Champion Remix">
+        <artista>Cartoon</artista>
+        <album>Sencillo</album>
+        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__Made_Me_Feel_ft_Kristel_Aaslaid_Champion_Remix.jpg</imagen>
+        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__Made_Me_Feel_ft_Kristel_Aaslaid_Champion_Remix.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Cartoon  On  On feat Daniel Levi NCS Release">
+        <artista>Cartoon</artista>
+        <album>Sencillo</album>
+        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__On__On_feat_Daniel_Levi_NCS_Release.jpg</imagen>
+        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__On__On_feat_Daniel_Levi_NCS_Release.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Enemy from the series Arcane League of Legends">
+        <artista>Imagine Dragons</artista>
+        <album>Sencillo</album>
+        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Imagine_Dragons__JID__Enemy_from_the_series_Arcane_League_of_Legends__Official_Music_Video.jpg</imagen>
+        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Imagine_Dragons__JID__Enemy_from_the_series_Arcane_League_of_Legends__Official_Music_Video.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Graveyar">
+        <artista>Healsy</artista>
+        <album>Manic</album>
+        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Manic.jpg</imagen>
+        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Graveyard.mp3</ruta>
+    </cancion>
+    <cancion nombre = "You should be sad">
+        <artista>Healsy</artista>
+        <album>Manic</album>
+        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Manic.jpg</imagen>
+        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/You_should_be_sad.mp3</ruta>
+    </cancion>
+    <cancion nombre = "New Americana">
+        <artista>Healsy</artista>
+        <album>Badlands</album>
+        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Badlands.jpg</imagen>
+        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Halsey_New_Americana.mp3</ruta>
+    </cancion>
+    <cancion nombre = "Solo a terceros">
+        <artista>PXNDX</artista>
+        <album>Poetics</album>
+        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Manic.jpg</imagen>
+        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/PXNDX _Solo_a_Terceros_VIDEO_OFICIAL.mp3</ruta>
+    </cancion>    
+</biblioteca>

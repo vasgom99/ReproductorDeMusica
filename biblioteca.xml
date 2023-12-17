@@ -1,44 +1,130 @@
 <biblioteca>
-    <cancion nombre = "Cartoon  Made Me Feel ft Kristel Aaslaid Champion Remix">
-        <artista>Cartoon</artista>
+
+    <cancion nombre = "Adam-Pearce-Remix">
+        <artista>Culture-Code</artista>
+        <album>After All</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/Adam-Pearce-Remix.mp3</ruta>
+    </cancion>
+
+    <cancion nombre = "After-All-ft-RUNN">
+        <artista>Culture-Code</artista>
+        <album>After All</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/After-All-ft-RUNN.mp3</ruta>
+    </cancion>
+
+
+    <cancion nombre = "Culture-Code---Make-Me-Move-(feat-Karra)-[NCS-Release]">
+        <artista>Culture-Code</artista>
         <album>Sencillo</album>
-        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__Made_Me_Feel_ft_Kristel_Aaslaid_Champion_Remix.jpg</imagen>
-        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__Made_Me_Feel_ft_Kristel_Aaslaid_Champion_Remix.mp3</ruta>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/Sencillo/mekeMove.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/Sencillo/Culture-Code---Make-Me-Move-(feat-Karra)-[NCS-Release].mp3</ruta>
     </cancion>
-    <cancion nombre = "Cartoon  On  On feat Daniel Levi NCS Release">
-        <artista>Cartoon</artista>
+
+
+
+
+    <cancion nombre = "GateWay">
+        <artista>Daniel-Levi</artista>
         <album>Sencillo</album>
-        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__On__On_feat_Daniel_Levi_NCS_Release.jpg</imagen>
-        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Cartoon__On__On_feat_Daniel_Levi_NCS_Release.mp3</ruta>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/gateway.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/Sencillo/GateWay.mp3</ruta>
     </cancion>
-    <cancion nombre = "Enemy from the series Arcane League of Legends">
-        <artista>Imagine Dragons</artista>
+
+    <cancion nombre = "Honey">
+        <artista>Daniel-Levi</artista>
         <album>Sencillo</album>
-        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Imagine_Dragons__JID__Enemy_from_the_series_Arcane_League_of_Legends__Official_Music_Video.jpg</imagen>
-        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Imagine_Dragons__JID__Enemy_from_the_series_Arcane_League_of_Legends__Official_Music_Video.mp3</ruta>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/honey.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/Sencillo/honey.mp3</ruta>
     </cancion>
-    <cancion nombre = "Graveyar">
-        <artista>Healsy</artista>
-        <album>Manic</album>
-        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Manic.jpg</imagen>
-        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Graveyard.mp3</ruta>
+
+
+
+
+
+    <cancion nombre = "Horizon">
+        <artista>Jinji</artista>
+        <album>Sencillo</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Janji/Sencillo/Horizon.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Janji/Sencillo/Horizon.mp3</ruta>
     </cancion>
-    <cancion nombre = "You should be sad">
-        <artista>Healsy</artista>
-        <album>Manic</album>
-        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Manic.jpg</imagen>
-        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/You_should_be_sad.mp3</ruta>
+
+    <cancion nombre = "Tonhight">
+        <artista>Jinji</artista>
+        <album>Sencillo</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Janji/Sencillo/Heroes-Tonight.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Janji/Sencillo/Janji-Heroes-Tonight.mp3</ruta>
     </cancion>
-    <cancion nombre = "New Americana">
-        <artista>Healsy</artista>
-        <album>Badlands</album>
-        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Badlands.jpg</imagen>
-        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Halsey_New_Americana.mp3</ruta>
+
+
+
+    
+
+    <cancion nombre = "Honor">
+        <artista>Neffex</artista>
+        <album>Courageous</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/neffex-courageous-lyrics-Portada.jpg</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/NEFFEX-Honor.mp3</ruta>
     </cancion>
-    <cancion nombre = "Solo a terceros">
-        <artista>PXNDX</artista>
-        <album>Poetics</album>
-        <imagen>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/Manic.jpg</imagen>
-        <ruta>/home/elmermekel/Documentos/RECIBIDO LOCALSEND/000 PRUEBAAAS PYTON/Proyecto1_v2 (copia)/Musica/PXNDX _Solo_a_Terceros_VIDEO_OFICIAL.mp3</ruta>
-    </cancion>    
+
+    <cancion nombre = "Courageous">
+        <artista>Neffex</artista>
+        <album>Courageous</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/neffex-courageous-lyrics-Portada.jpg</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/NEFFEX-Courageous.mp3</ruta>
+    </cancion>
+
+    <cancion nombre = "NEFFEX-Villains-and-Heroes">
+        <artista>Neffex</artista>
+        <album>Courageous</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/neffex-courageous-lyrics-Portada.jpg</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/NEFFEX-Villains-and-Heroes.mp3</ruta>
+    </cancion>
+
+
+
+
+
+    <cancion nombre = "NEFFEX-Good-Day-Wake-Up">
+        <artista>Neffex</artista>
+        <album>Ruthless</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Ruthless/Ruthless-portada.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Ruthless/NEFFEX-Good-Day-Wake-Up-CopyrightFree.mp3</ruta>
+    </cancion>
+
+    <cancion nombre = "NEFFEX-Ruthless">
+        <artista>Neffex</artista>
+        <album>Ruthless</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Ruthless/Ruthless-portada.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Ruthless/NEFFEX-Ruthless-CopyrightFrees.mp3</ruta>
+    </cancion>
+
+    <cancion nombre = "NEFFEX-Take-Me-Back">
+        <artista>Neffex</artista>
+        <album>Ruthless</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Ruthless/Ruthless-portada.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Ruthless/NEFFEX-Take-Me-Back-CopyrightFree.mp3</ruta>
+    </cancion>
+
+
+    <cancion nombre = "NEFFEX-Take-Me-Back">
+        <artista>Neffex</artista>
+        <album>Ruthless</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Sencillo/Grateful.jpg</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Sencillo/NEFFEX - Grateful [Copyright Free].mp3</ruta>
+    </cancion>
+
+
+
+
+
+
+    <cancion nombre = "Hold-On-Me">
+        <artista>RaulOjamma</artista>
+        <album>Sencillo</album>
+        <imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/RaulOjamma/Sencillo/Hold-On-Me.png</imagen>
+        <ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/RaulOjamma/Sencillo/Hold-On-Me.mp3</ruta>
+    </cancion> 
+
 </biblioteca>
