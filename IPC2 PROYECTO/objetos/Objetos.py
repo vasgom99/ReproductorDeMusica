@@ -316,6 +316,19 @@ class ListaCircular:
                     break
                 actual = actual.siguiente
             return actual.value
+        
+    def toList(self):
+        result = []
+        if self.head is not None:
+            current = self.head
+            while True:
+                result.append(current.value)
+                current = current.siguiente
+                if current == self.head:
+                    break
+        return result
+
+    
     def contains(self, object):
         if self.head == None:
             return None
@@ -342,6 +355,7 @@ class ListaCircular:
                 actual = actual.siguiente
                 if actual == self.head:
                     break
+    
 
         else:
             string += "]"

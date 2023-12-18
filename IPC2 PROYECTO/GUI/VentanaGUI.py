@@ -8,6 +8,7 @@ from PIL import Image
 from PIL import ImageTk
 from Hilos.hilos import TPlay
 import threading
+import random
 
 class Window(Tk):
     def __init__(self):
@@ -16,7 +17,7 @@ class Window(Tk):
         y_ = self.winfo_screenheight()//2-700//2
         self.resizable(0,0)
         self.geometry("1360x700+{}+{}".format(x_,y_))
-        self.title("Reproductor Musica Los Sexosos")
+        self.title("Reproductor Musica")
         self.library = None
         self.songslist = ListaDoble()
         self.playList = ListaCircular()
@@ -48,7 +49,7 @@ class Window(Tk):
         self.btnAnterior = Button(self.fondo, text = "Anterior", bg = "#5294E2", fg = "white" , command = self.aBack)
         self.btnAddToList = Button(self.fondo, text = "Agregar Lista", bg = "#5294E2", fg = "white" , command = self.addToList)
         self.btnSaveList = Button(self.fondo, text = "Guardar Lista", bg = "#5294E2", fg = "white" ,command = self.saveList)
-        self.btnRandom = Button(self.fondo, text = "Aleatorio", bg = "#1A73E9", fg = "white")
+        self.btnRandom = Button(self.fondo, text="Aleatorio", bg="#1A73E9", fg="white", command=self.playRandom)
         self.btnDelete = Button(self.fondo, text = "Eliminar Lista", bg = "#5294E2", fg = "white" , command = self.addPlayList)
         self.btnExportList = Button(self.fondo, text = "Exportar Listas", bg = "#5294E2", fg = "white" , command = self.exportarListas)
         
@@ -96,6 +97,7 @@ class Window(Tk):
         self.btnDelete.place(x = 120, y = 250, width = 130)
         self.btnExportList.place(x = 120, y = 220, width = 130) 
         
+          
     def addArbol(self):
         columns = ("cancion", "album", "artista")
         self.tabla = ttk.Treeview(self.fondo, columns = columns, show = "headings")
@@ -110,6 +112,29 @@ class Window(Tk):
         scrollbar.place(x= 820, y = 320, width = 20, height = 185)
         self.tabla.place(x = 820, y = 320, width = 500, height = 200)
         
+    def playRandom(self):
+        if self.playList.length > 0:
+            # Detener la reproducción actual antes de reproducir una canción aleatoria
+            if self.threadPlay is not None:
+                self.threadPlay.estado = 'e'  # Detener la canción actual
+
+            # Seleccionar un nodo aleatorio directamente de la lista circular
+            random_index = random.randint(0, self.playList.length - 1)
+
+            current = self.playList.head
+            for _ in range(random_index):
+                current = current.siguiente
+
+            self.actualPlaylist = current
+
+            # Reproducir la canción aleatoria
+            self.setInfo(self.actualPlaylist.value.nombre, self.actualPlaylist.value.album, self.actualPlaylist.value.artista)
+            self.setPhoto(self.actualPlaylist)
+
+            play_event = threading.Event()
+            stop_event = threading.Event()
+            self.reproducir(self.actualPlaylist.value, play_event, stop_event)
+     
     def addPlayList(self):
         self.entryPlaylist = EntryPlaceholder("Nombre de Playlist", self.fondo, color = "#322D2D")
         self.entryPlaylist.config(justify = CENTER)
