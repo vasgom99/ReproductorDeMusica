@@ -113,24 +113,16 @@ class Window(Tk):
         self.tabla.place(x = 820, y = 320, width = 500, height = 200)
         
     def playRandom(self):
-        if self.playList.length > 0:
-            # Detener la reproducción actual antes de reproducir una canción aleatoria
+        if self.playList.length > 0:        
             if self.threadPlay is not None:
-                self.threadPlay.estado = 'e'  # Detener la canción actual
-
-            # Seleccionar un nodo aleatorio directamente de la lista circular
+                self.threadPlay.estado = 'e'
             random_index = random.randint(0, self.playList.length - 1)
-
             current = self.playList.head
             for _ in range(random_index):
                 current = current.siguiente
-
             self.actualPlaylist = current
-
-            # Reproducir la canción aleatoria
             self.setInfo(self.actualPlaylist.value.nombre, self.actualPlaylist.value.album, self.actualPlaylist.value.artista)
             self.setPhoto(self.actualPlaylist)
-
             play_event = threading.Event()
             stop_event = threading.Event()
             self.reproducir(self.actualPlaylist.value, play_event, stop_event)
