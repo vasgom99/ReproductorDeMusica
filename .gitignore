@@ -5,3 +5,7 @@ library.dot
 library.png
 /entornoPillow
 Listas_de_reproduccion.xml
+**/GUI/__pycache__/
+**/Hilos/__pycache__/
+**/metodos/__pycache__/
+**/objetos/__pycache__/
