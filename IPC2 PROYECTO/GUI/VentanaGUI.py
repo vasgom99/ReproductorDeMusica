@@ -76,7 +76,7 @@ class Window(Tk):
         self.cbbAlbumbes.bind("<<ComboboxSelected>>", self.change_album)
         self.cbbArtistas.place(x = 60, y = 110, width = 120)
         self.cbbAlbumbes.place(x = 90, y = 140, width = 120)
-        self.cbbListas.place(x = 120, y = 170, width = 120)
+        #self.cbbListas.place(x = 120, y = 170, width = 120)
         
         
         #caja busquea
