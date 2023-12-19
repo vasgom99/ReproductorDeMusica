@@ -1,7 +1,26 @@
 <?xml version = "1.0" encoding="UTF-8"?>
 <ListasReproduccion>
 	<Lista nombre = "Nombre de Playlist">
-	</Lista>
-	<Lista nombre = "wasa">
+		<cancion nombre = "Adam-Pearce-Remix"
+			<artista>Culture-Code</artista>
+			<album>After All</album>
+			<vecesReproducida>0</vecesReproducida>
+			<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
+			<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/Adam-Pearce-Remix.mp3</ruta>
+		</cancion>
+		<cancion nombre = "After-All-ft-RUNN"
+			<artista>Culture-Code</artista>
+			<album>After All</album>
+			<vecesReproducida>0</vecesReproducida>
+			<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
+			<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/After-All-ft-RUNN.mp3</ruta>
+		</cancion>
+		<cancion nombre = "Culture-Code---Make-Me-Move-(feat-Karra)-[NCS-Release]"
+			<artista>Culture-Code</artista>
+			<album>Sencillo</album>
+			<vecesReproducida>0</vecesReproducida>
+			<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/Sencillo/mekeMove.png</imagen>
+			<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/Sencillo/Culture-Code---Make-Me-Move-(feat-Karra)-[NCS-Release].mp3</ruta>
+		</cancion>
 	</Lista>
 </ListasReproduccion>

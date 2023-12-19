@@ -375,22 +375,26 @@ digraph G{
         
     def exportarListas(self):
         if self.listaPlayList.length > 0:
-            xml = '<?xml version = "1.0" encoding="UTF-8"?>\n'
+            xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
             xml += '<ListasReproduccion>\n'
+
             for i in range(self.listaPlayList.length):
                 lista = self.listaPlayList.getById(i)
-                xml += '\t<Lista nombre = "{}">\n'.format(lista.nombre)
+                xml += '\t<Lista nombre="{}">\n'.format(lista.nombre)
+                
                 for j in range(lista.length):
                     cancion = lista.getById(j)
-                    xml += '\t\t<cancion nombre = "{}"\n'.format(cancion.nombre)
-                    xml += '\t\t\t<artista>{}</artista>\n'.format(cancion.artista)
-                    xml += '\t\t\t<album>{}</album>\n'.format(cancion.album)
-                    xml += '\t\t\t<vecesReproducida>{}</vecesReproducida>\n'.format(0)
-                    xml += '\t\t\t<imagen>{}</imagen>\n'.format(cancion.imagen)
-                    xml += '\t\t\t<ruta>{}</ruta>\n'.format(cancion.ruta)
-                    xml += '\t\t</cancion>\n'
+                    xml += '\t\t<Cancion nombre="{}">\n'.format(cancion.nombre)
+                    xml += '\t\t\t<Artista>{}</Artista>\n'.format(cancion.artista)
+                    xml += '\t\t\t<Album>{}</Album>\n'.format(cancion.album)
+                    xml += '\t\t\t<VecesReproducida>{}</VecesReproducida>\n'.format(0)
+                    xml += '\t\t\t<Imagen>{}</Imagen>\n'.format(cancion.imagen)
+                    xml += '\t\t\t<Ruta>{}</Ruta>\n'.format(cancion.ruta)
+                    xml += '\t\t</Cancion>\n'
+
                 xml += '\t</Lista>\n'
+
             xml += '</ListasReproduccion>\n'
-            file = open("Listas_de_reproducción.xml", "w")
-            file.write(xml)
-            file.close()
+
+            with open("Listas_de_reproducción.xml", "w") as file:
+                file.write(xml)
