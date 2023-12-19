@@ -9,6 +9,8 @@ from PIL import ImageTk
 from Hilos.hilos import TPlay
 import threading
 import random
+import re
+
 
 class Window(Tk):
     def __init__(self):
@@ -26,7 +28,6 @@ class Window(Tk):
         self.listaPlayList = ListaDoble()
         self.initComponent()
         
-        
     def initComponent(self):
         
         style = ttk.Style()
@@ -35,8 +36,7 @@ class Window(Tk):
         # Crear el Frame
         self.fondo = ttk.Frame(self, style="Modern.TFrame")
         # Ubicar el Frame
-        self.fondo.place(x=0, y=0, width=1360, height=700)
-        
+        self.fondo.place(x=0, y=0, width=1360, height=700)   
         
         #BOTONES
         self.btnNormal = Button(self.fondo, text = "Normal", bg = "#1A73E9", fg = "white") 
@@ -78,6 +78,14 @@ class Window(Tk):
         self.cbbAlbumbes.place(x = 90, y = 140, width = 120)
         self.cbbListas.place(x = 120, y = 170, width = 120)
         
+        
+        #caja busquea
+        self.entryBusqueda = EntryPlaceholder("Buscar canción", self.fondo, color="#322D2D")
+        self.entryBusqueda.config(justify=CENTER)
+        self.entryBusqueda.place(x=20, y=600, width=200, height=30)
+        self.btnBuscar = Button(self.fondo, text="Buscar", bg="#5294E2", fg="white", command=self.buscarCancion)
+        self.btnBuscar.place(x=240, y=600, width=70, height=30)
+        
         #### UBICANDO ELEMENTOS ###
         self.btnNormal.place(x = 120, y = 310, width = 130)
         self.btnCargarXML.place(x = 20, y = 50, width = 135, height = 25)
@@ -96,7 +104,23 @@ class Window(Tk):
         self.btnRandom.place(x = 120, y = 280, width = 130) 
         self.btnDelete.place(x = 120, y = 250, width = 130)
         self.btnExportList.place(x = 120, y = 220, width = 130) 
-        
+  
+  #se muestran los resultados en la tabla en donde se cargan las canciones de la lista
+    def buscarCancion(self):
+        query = self.entryBusqueda.get().lower()
+        resultados = []
+        for i in range(self.songslist.length):
+            song = self.songslist.getById(i)
+            if re.search(query, song.nombre.lower()) or re.search(query, song.album.lower()) or re.search(query, song.artista.lower()):
+                resultados.append(song)
+        if resultados:
+            for item in self.tabla.get_children():
+                self.tabla.delete(item)
+            for result in resultados:
+                row = (result.nombre, result.album, result.artista)
+                self.tabla.insert('', END, values=row)
+        else:
+            messagebox.showinfo("Búsqueda", "No se encontraron resultados.")
           
     def addArbol(self):
         columns = ("cancion", "album", "artista")
@@ -194,9 +218,7 @@ class Window(Tk):
         # Crear eventos para controlar la reproducción
             play_event = threading.Event()
             stop_event = threading.Event()
-            self.reproducir(self.actualPlaylist.value, play_event, stop_event)
-    
-    
+            self.reproducir(self.actualPlaylist.value, play_event, stop_event)   
                 
     def aNext(self):
         if self.playList.length > 0:
@@ -212,7 +234,6 @@ class Window(Tk):
             play_event = threading.Event()
             stop_event = threading.Event()
             self.reproducir(self.actualPlaylist.value, play_event, stop_event)
-
             
     def aBack(self):
         if self.playList.length > 0:
