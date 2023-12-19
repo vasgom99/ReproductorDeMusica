@@ -6,16 +6,10 @@
 		<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
 		<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/Adam-Pearce-Remix.mp3</ruta>
 	</cancion>
-	<cancion nombre="Honor">
+	<cancion nombre="NEFFEX-Villains-and-Heroes">
 		<artista>Neffex</artista>
 		<album>Courageous</album>
 		<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/neffex-courageous-lyrics-Portada.jpg</imagen>
-		<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/NEFFEX-Honor.mp3</ruta>
-	</cancion>
-	<cancion nombre="Honey">
-		<artista>Daniel-Levi</artista>
-		<album>Sencillo</album>
-		<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/honey.png</imagen>
-		<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/honey.mp3</ruta>
+		<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/NEFFEX-Villains-and-Heroes.mp3</ruta>
 	</cancion>
 </biblioteca>

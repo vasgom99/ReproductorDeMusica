@@ -50,7 +50,7 @@ class Window(Tk):
         self.btnAddToList = Button(self.fondo, text = "Agregar Lista", bg = "#5294E2", fg = "white" , command = self.addToList)
         self.btnSaveList = Button(self.fondo, text = "Guardar Lista", bg = "#5294E2", fg = "white" ,command = self.saveList)
         self.btnRandom = Button(self.fondo, text="Aleatorio", bg="#1A73E9", fg="white", command=self.playRandom)
-        self.btnDelete = Button(self.fondo, text = "Eliminar Lista", bg = "#5294E2", fg = "white" , command = self.addPlayList)
+        self.btnDelete = Button(self.fondo, text = "Limpiar Lista", bg = "#5294E2", fg = "white" , command = self.addPlayList)
         self.btnExportList = Button(self.fondo, text = "Exportar Listas", bg = "#5294E2", fg = "white" , command = self.exportarListas)
         
         #LABELS
