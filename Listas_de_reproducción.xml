@@ -1,26 +1,21 @@
-<?xml version = "1.0" encoding="UTF-8"?>
-<ListasReproduccion>
-	<Lista nombre = "Nombre de Playlist">
-		<cancion nombre = "Adam-Pearce-Remix"
-			<artista>Culture-Code</artista>
-			<album>After All</album>
-			<vecesReproducida>0</vecesReproducida>
-			<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
-			<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/Adam-Pearce-Remix.mp3</ruta>
-		</cancion>
-		<cancion nombre = "After-All-ft-RUNN"
-			<artista>Culture-Code</artista>
-			<album>After All</album>
-			<vecesReproducida>0</vecesReproducida>
-			<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
-			<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/After-All-ft-RUNN.mp3</ruta>
-		</cancion>
-		<cancion nombre = "Culture-Code---Make-Me-Move-(feat-Karra)-[NCS-Release]"
-			<artista>Culture-Code</artista>
-			<album>Sencillo</album>
-			<vecesReproducida>0</vecesReproducida>
-			<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/Sencillo/mekeMove.png</imagen>
-			<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/Sencillo/Culture-Code---Make-Me-Move-(feat-Karra)-[NCS-Release].mp3</ruta>
-		</cancion>
-	</Lista>
-</ListasReproduccion>
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+	<cancion nombre="Adam-Pearce-Remix">
+		<artista>Culture-Code</artista>
+		<album>After All</album>
+		<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/AfterAll.jpg</imagen>
+		<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Culture-Code/AfterAll/Adam-Pearce-Remix.mp3</ruta>
+	</cancion>
+	<cancion nombre="Honor">
+		<artista>Neffex</artista>
+		<album>Courageous</album>
+		<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/neffex-courageous-lyrics-Portada.jpg</imagen>
+		<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Neffex/Courageous/NEFFEX-Honor.mp3</ruta>
+	</cancion>
+	<cancion nombre="Honey">
+		<artista>Daniel-Levi</artista>
+		<album>Sencillo</album>
+		<imagen>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/honey.png</imagen>
+		<ruta>/home/elmermekel/proyecto1IPC/IPC2_Proyecto1Diciembre_-Pendiente/IPC2 PROYECTO/Musicass/Daniel-Levi/honey.mp3</ruta>
+	</cancion>
+</biblioteca>
